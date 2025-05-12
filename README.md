@@ -1,1 +1,247 @@
-# Portofolio
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerPortfolio - [Nama Anda]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(45deg, #2a2a2a, #1a1a1a);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(#00ff00, #000000);
+            animation: animate 10s linear infinite;
+            opacity: 0.1;
+        }
+
+        @keyframes animate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #00ff00;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .gamer-tag {
+            font-size: 2.5em;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 12px 25px;
+            background-color: #1a1a1a;
+            color: #00ff00;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #00ff00;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #00ff00;
+            color: #000000;
+            box-shadow: 0 0 15px #00ff00;
+        }
+
+        .content-section {
+            padding: 50px 0;
+            border-bottom: 2px solid #00ff00;
+        }
+
+        .gaming-setup {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .setup-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #00ff00;
+        }
+
+        .highlight {
+            color: #00ff00;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #1a1a1a;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .gamer-tag {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="Profil Pic.jpg" alt="Profil Gamer" class="profile-img">
+            <h1 class="gamer-tag">PRX Rikku</h1>
+            <p>Professional Gamer • Content Creator • Streamer</p>
+            
+            <div class="social-links">
+                <a href="https://www.youtube.com/@Rikkuisnotmyname" target="blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://www.instagram.com/rijaloktama_/" target="blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="content-section">
+            <h2>🎮 About Me</h2>
+            <p>Hi! I'm Ganendra Rijal Oktama, a professional gamer specializing in FPS and Battle Royale games. 
+               With over 5 years of competitive gaming experience, I create exciting content and 
+               share gaming tips through my channels.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>🖥️ Gaming Setup</h2>
+            <div class="gaming-setup">
+                <div class="setup-card">
+                    <h3 class="highlight">PC Specs</h3>
+                    <ul>
+                        <li>CPU: Intel i5 5th Gen</li>
+                        <li>GPU: GTX 1080</li>
+                        <li>RAM: 8GB DDR5</li>
+                        <li>Storage: 512GB</li>
+                    </ul>
+                </div>
+                
+                <div class="setup-card">
+                    <h3 class="highlight">Peripherals</h3>
+                    <ul>
+                        <li>Monitor: 15.6" 144Hz</li>
+                        <li>Keyboard: Bawaan Laptop</li>
+                        <li>Mouse: Nitro NWM120</li>
+                        <li>Headset: Rexus Vonix F27</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎥 Latest Video</h2>
+            <div class="video-container">
+                <iframe src="https://youtu.be/HTdWFnpcbzk?si=bKzm135iGpbUbt1N" 
+                        frameborder="0" 
+                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Ganendra Rijal Oktama - Gamer Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Smooth scroll effect
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animasi saat scroll
+        window.addEventListener('scroll', () => {
+            const elements = document.querySelectorAll('.content-section');
+            elements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                if (elementTop < window.innerHeight - 100) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Inisialisasi animasi
+        document.querySelectorAll('.content-section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+        });
+    </script>
+</body>
+</html>
